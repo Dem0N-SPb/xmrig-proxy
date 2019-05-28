@@ -69,6 +69,7 @@ static AlgoData const algorithms[] = {
     { "cryptonight/rwz",       "cn/rwz",       xmrig::CRYPTONIGHT,       xmrig::VARIANT_RWZ    },
     { "cryptonight/zls",       "cn/zls",       xmrig::CRYPTONIGHT,       xmrig::VARIANT_ZLS    },
     { "cryptonight/double",    "cn/double",    xmrig::CRYPTONIGHT,       xmrig::VARIANT_DOUBLE },
+    { "cryptonight/conceal",   "cn/conc",      xmrig::CRYPTONIGHT,       xmrig::VARIANT_CONC },
 
 #   ifndef XMRIG_NO_AEON
     { "cryptonight-lite",      "cn-lite",      xmrig::CRYPTONIGHT_LITE,  xmrig::VARIANT_AUTO },
@@ -117,6 +118,7 @@ static AlgoData const xmrStakAlgorithms[] = {
     { "cryptonight_turtle",      nullptr, xmrig::CRYPTONIGHT_PICO,  xmrig::VARIANT_TRTL },
     { "cryptonight_gpu",         nullptr, xmrig::CRYPTONIGHT,       xmrig::VARIANT_GPU  },
     { "cryptonight_r",           nullptr, xmrig::CRYPTONIGHT,       xmrig::VARIANT_4  },
+    { "cryptonight_conceal",     nullptr, xmrig::CRYPTONIGHT,       xmrig::VARIANT_CONC }, // xmr-stak-conceal
 };
 #endif
 
@@ -138,7 +140,8 @@ static const char *variants[] = {
     "r",
     "rwz",
     "zls",
-    "double"
+    "double",
+    "conceal"
 };
 
 
